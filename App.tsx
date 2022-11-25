@@ -9,6 +9,7 @@ import {
   useFonts,
 } from "@expo-google-fonts/inter";
 import AppLoading from "expo-app-loading";
+import { StatusBar } from "react-native";
 import { theme } from "./src/styles/theme";
 import { Routes } from "./src/routes";
 // import { AuthProvider } from "./src/hooks/AuthProvider";
@@ -26,6 +27,7 @@ export default function App() {
   }
   return (
     <ThemeProvider theme={theme}>
+      <StatusBar barStyle="dark-content" backgroundColor="#fff" translucent />
       <Routes />
     </ThemeProvider>
   );

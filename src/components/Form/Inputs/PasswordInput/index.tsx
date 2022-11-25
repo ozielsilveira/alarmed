@@ -19,6 +19,7 @@ interface Props extends TextInputProps {
   errorText?: any;
   error?: any;
   label?: string;
+  labelColor?: any;
   password?: boolean;
   secureTextEntry?: any;
 }
@@ -28,6 +29,7 @@ export function PasswordInput({
   errorText,
   error,
   password,
+  labelColor,
   label,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   secureTextEntry,
@@ -42,7 +44,7 @@ export function PasswordInput({
 
   return (
     <Container>
-      <InputLabel>{label}</InputLabel>
+      <InputLabel labelColor={labelColor}>{label}</InputLabel>
       <InputContainer error={error}>
         <InputTextContainer
           value={value}
@@ -63,9 +65,11 @@ export function PasswordInput({
         </ChangeVisibiliyPassword>
       </InputContainer>
 
-      <Error>
-        <ErrorText>{errorText}</ErrorText>
-      </Error>
+      {errorText && (
+        <Error>
+          <ErrorText>{errorText}</ErrorText>
+        </Error>
+      )}
     </Container>
   );
 }

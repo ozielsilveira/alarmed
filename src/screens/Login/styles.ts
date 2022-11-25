@@ -22,7 +22,7 @@ export const ForgotPasswordContainer = styled.TouchableOpacity.attrs({
 })`
   flex-direction: row;
   justify-content: flex-end;
-  margin: -28px 0 24px 0;
+  margin: 4px 0 24px 0;
 `;
 
 export const ForgotPasswordText = styled.Text`

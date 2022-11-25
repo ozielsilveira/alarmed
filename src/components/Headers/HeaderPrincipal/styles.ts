@@ -18,7 +18,7 @@ export const Informations = styled.View`
 
 export const Title = styled.Text`
   text-align: center;
-  color: ${({ theme }) => theme.colors.gray1};
+  color: ${({ theme }) => theme.colors.black};
   font-size: ${RFValue(16)}px;
   font-family: ${({ theme }) => theme.fonts.primary_600};
 `;
@@ -29,9 +29,10 @@ export const IconContainerOne = styled(TouchableOpacity).attrs({
   padding: 24px 30px;
 
   position: absolute;
-  left: ${RFValue(-48)}px;
-  top: ${RFValue(-26)}px;
+  left: ${RFValue(-38)}px;
+  top: ${RFValue(-18)}px;
 `;
+
 export const IconContainer = styled(TouchableOpacity).attrs({
   activeOpacity: 0.7,
 })`
@@ -39,6 +40,6 @@ export const IconContainer = styled(TouchableOpacity).attrs({
   align-items: flex-end;
   position: absolute;
   padding: 24px 30px;
-  left: ${RFValue(280)}px;
-  top: ${RFValue(-24)}px;
+  left: ${RFValue(250)}px;
+  top: ${RFValue(-18)}px;
 `;

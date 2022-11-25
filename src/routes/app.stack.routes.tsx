@@ -1,7 +1,8 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { Home } from "../screens/Home";
-import { Teste } from "../screens/Teste";
+import { Login } from "../screens/Login";
+import { SignUp } from "../screens/SignUp";
+import { ForgotPassword } from "../screens/ForgotPassword";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -12,8 +13,9 @@ export function AppStackRoutes() {
         headerShown: false,
       }}
     >
-      <Screen component={Home} name="Home" />
-      <Screen component={Teste} name="Teste" />
+      <Screen component={Login} name="Login" />
+      <Screen component={SignUp} name="SignUp" />
+      <Screen component={ForgotPassword} name="ForgotPassword" />
     </Navigator>
   );
 }
