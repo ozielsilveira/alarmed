@@ -42,7 +42,7 @@ export function Login() {
             password: "",
           }}
           validationSchema={schema}
-          onSubmit={(values: any) => console.log(values)}
+          onSubmit={() => handleGoScreen("Home")}
         >
           {({ handleChange, handleBlur, handleSubmit, values, errors }) => (
             <>

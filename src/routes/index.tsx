@@ -3,12 +3,12 @@ import Toast from "react-native-toast-message";
 import { NavigationContainer } from "@react-navigation/native";
 
 import { toastConfig } from "../utils/ToastConfig/toastConfig";
-import { AppStackRoutes } from "./app.stack.routes";
+import { AppTabRoutes } from "./app.tab.routes";
 
 export function Routes() {
   return (
     <NavigationContainer>
-      <AppStackRoutes />
+      <AppTabRoutes />
       <Toast config={toastConfig} />
     </NavigationContainer>
   );
